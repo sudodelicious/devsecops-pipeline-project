@@ -1,0 +1,25 @@
+
+---
+
+## 📘 `docs/integration-guide.md` – Add to Existing Pipelines
+
+```markdown
+# Integrating Pipeline-Project with Your Jenkins Pipeline
+
+## 🔌 Jenkins Pipeline Integration Options
+
+### ✅ Option 1: Standalone Security Pipeline
+Create a new Jenkins job and point it to this repo. Use `integrations/Jenkins/security-only.Jenkinsfile` to scan your existing source or Docker images.
+
+### ✅ Option 2: Add to Existing Jenkinsfile
+
+Copy-paste any of these snippets from `integrations/Jenkins/snippets/` into your existing pipeline:
+
+```groovy
+stage('Scan: Trivy') {
+  steps {
+    dir('app') {
+      bat 'powershell ../scripts/trivy.ps1'
+    }
+  }
+}

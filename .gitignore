@@ -1,0 +1,32 @@
+# Binaries and build artifacts
+bin/
+obj/
+*.exe
+*.dll
+*.pdb
+
+# Secrets and sensitive data
+*.env
+.env.*
+vault/*.yml
+secrets.yml
+*.tfstate
+*.pem
+*.key
+*.crt
+
+# Logs and reports
+*.log
+*.txt
+*.out
+*.retry
+
+# IDE and tooling
+.vscode/
+.idea/
+*.suo
+*.user
+*.vs
+
+# Docker volumes and cache
+volumes/
