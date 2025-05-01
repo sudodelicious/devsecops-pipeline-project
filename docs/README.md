@@ -25,4 +25,4 @@
 1. Clone this repo into your Jenkins server or internal tools folder:
 
 ```bash
-git clone https://github.com/your-org/Pipeline-Project.git
+git clone https://github.com/sudodelicious/devsecops-pipeline-project.git
